@@ -1,6 +1,7 @@
 {
   imports = [
     ./bat.nix
+    # ./bottom.nix
     ./eza.nix
     ./fzf.nix
     ./tmux.nix

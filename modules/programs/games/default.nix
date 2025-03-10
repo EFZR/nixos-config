@@ -1,1 +1,7 @@
-{ imports = [ ./gamemode.nix ./prismlauncher.nix ]; }
+{
+  imports = [
+    ./gamemode.nix
+    ./prismlauncher.nix
+    # ./lutris.nix
+  ];
+}
