@@ -66,9 +66,6 @@
 
       # Extras
       cmatrix
-
-      # Browser
-      brave
     ];
   };
 

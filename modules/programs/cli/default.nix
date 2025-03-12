@@ -8,6 +8,6 @@
     ./yazi.nix
     ./direnv.nix
     ./ripgrep.nix
-    ./catpuccin.nix
+    # ./catpuccin.nix
   ];
 }

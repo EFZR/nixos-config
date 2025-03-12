@@ -17,11 +17,13 @@
           packages = [ inputs.nixvim.packages.x86_64-linux.default ];
           username = "efzr";
           homeDirectory = "/home/efzr";
+
           sessionVariables = {
             EDITOR = "nvim";
-            BROWSER = "brave";
+            BROWSER = "firefox";
           };
         };
+
         catppuccin = {
           flavor = "macchiato";
           accent = "peach";

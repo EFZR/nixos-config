@@ -325,6 +325,11 @@ in {
                   url = "https://chatgpt.com/";
                 }
                 {
+                  name = "Firebase";
+                  url = "https://console.firebase.google.com";
+                }
+
+                {
                   name = "NixOS";
                   bookmarks = [
                     {
@@ -376,8 +381,8 @@ in {
             }];
             search = {
               force = true;
-              default = "Startpage";
-              privateDefault = "Startpage";
+              default = "Google";
+              privateDefault = "Google";
               order = [
                 "Google"
                 "Startpage"

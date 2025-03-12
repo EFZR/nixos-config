@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ ... }: {
   config = {
     programs.zsh.enable = true;
 
@@ -50,6 +50,9 @@
           vim = "sudo nvim";
           vi = "sudo nvim";
           v = "sudo nvim";
+
+          ### Git aliases
+          "git log" = "git log --graph --all --decorate";
 
           # Kubernetes aliases
           k = "kubectl";
