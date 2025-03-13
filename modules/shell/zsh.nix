@@ -51,8 +51,11 @@
           vi = "sudo nvim";
           v = "sudo nvim";
 
-          ### Git aliases
+          ## Git aliases
           "git log" = "git log --graph --all --decorate";
+
+          ## Nix aliases
+          nix-shell = "nix-shell --command zsh";
 
           # Kubernetes aliases
           k = "kubectl";

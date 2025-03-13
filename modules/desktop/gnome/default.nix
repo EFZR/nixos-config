@@ -1,4 +1,5 @@
-{ ... }: {
+{ pkgs, ... }:
+{
   services = {
     xserver = {
       enable = true;
@@ -12,4 +13,8 @@
       # gnome-initial-setup = false;
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    gnomeExtensions.rounded-window-corners-reborn
+  ];
 }

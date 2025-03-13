@@ -8,7 +8,8 @@ let
     Value = true;
     Status = "locked";
   };
-in {
+in
+{
   home-manager.users.efzr = {
     programs = {
       firefox = {
@@ -60,8 +61,7 @@ in {
               "layout.css.color-mix.enabled" = true;
               "browser.tabs.delayHidingAudioPlayingIconMS" = 0;
               "layout.css.backdrop-filter.enabled" = true;
-              "browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar" =
-                false;
+              "browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar" = false;
               "privacy.userContext.enabled" = true;
               "privacy.userContext.ui.enabled" = true;
               "privacy.userContext.longPressBehavior" = 2;
@@ -69,8 +69,7 @@ in {
               # Performance settings
               "gfx.webrender.all" = true; # Force enable GPU acceleration
               "media.ffmpeg.vaapi.enabled" = true;
-              "widget.dmabuf.force-enabled" =
-                true; # Required in recent Firefoxes
+              "widget.dmabuf.force-enabled" = true; # Required in recent Firefoxes
               "reader.parse-on-load.force-enabled" = true;
               "privacy.webrtc.legacyGlobalIndicator" = false;
 
@@ -137,14 +136,11 @@ in {
               "browser.search.suggest.enabled.private" = lock-false;
               "privacy.popups.disable_from_plugins" = 3;
               "extensions.pocket.enabled" = lock-false;
-              "browser.newtabpage.activity-stream.section.highlights.includePocket" =
-                lock-false;
-              "browser.newtabpage.activity-stream.feeds.section.topstories" =
-                lock-false;
+              "browser.newtabpage.activity-stream.section.highlights.includePocket" = lock-false;
+              "browser.newtabpage.activity-stream.feeds.section.topstories" = lock-false;
               "browser.newtabpage.activity-stream.feeds.topsites" = lock-false;
               "browser.newtabpage.activity-stream.showSponsored" = lock-false;
-              "browser.newtabpage.activity-stream.showSponsoredTopSites" =
-                lock-false;
+              "browser.newtabpage.activity-stream.showSponsoredTopSites" = lock-false;
               "layout.word_select.eat_space_to_next_word" = lock-false;
               "browser.shell.checkDefaultBrowser" = lock-false;
               "signon.rememberSignons" = lock-false;
@@ -176,8 +172,7 @@ in {
               "browser.aboutwelcome.enabled" = lock-false;
               "browser.tabs.firefox-view" = lock-false;
               "browser.startup.homepage_override.mstone" = "ignore";
-              "trailhead.firstrun.didSeeAboutWelcome" =
-                true; # Disable welcome splash
+              "trailhead.firstrun.didSeeAboutWelcome" = true; # Disable welcome splash
               "browser.newtab.url" = "about:blank";
               "browser.newtabpage.activity-stream.enabled" = lock-false;
               "browser.newtabpage.enhanced" = lock-false;
@@ -195,19 +190,14 @@ in {
               "browser.ctrlTab.recentlyUsedOrder" = false;
               "browser.discovery.enabled" = false;
               "browser.laterrun.enabled" = false;
-              "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons" =
-                false;
-              "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features" =
-                false;
+              "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons" = false;
+              "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features" = false;
               "browser.newtabpage.activity-stream.feeds.snippets" = false;
-              "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned" =
-                "";
-              "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines" =
-                "";
+              "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned" = "";
+              "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines" = "";
               "browser.protections_panel.infoMessage.seen" = true;
               "browser.ssb.enabled" = true;
-              "browser.toolbars.bookmarks.visibility" =
-                "newtab"; # always, never, newtab
+              "browser.toolbars.bookmarks.visibility" = "newtab"; # always, never, newtab
               #"browser.urlbar.placeholderName" = "Google";
               "browser.urlbar.suggest.openpage" = false;
               "datareporting.policy.dataSubmissionEnable" = false;
@@ -216,8 +206,7 @@ in {
               "extensions.screenshots.disabled" = lock-true;
               "extensions.getAddons.showPane" = lock-false;
               "extensions.htmlaboutaddons.recommendations.enabled" = lock-false;
-              "extensions.extensions.activeThemeID" =
-                "firefox-compact-dark@mozilla.org";
+              "extensions.extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
               # "extensions.update.enabled" = false;
               "extensions.webcompat.enable_picture_in_picture_overrides" = true;
               "extensions.webcompat.enable_shims" = true;
@@ -281,8 +270,10 @@ in {
                     "new-tab-button"
                     "alltabs-button"
                   ];
-                  PersonalToolbar =
-                    [ "personal-bookmarks" "managed-bookmarks" ];
+                  PersonalToolbar = [
+                    "personal-bookmarks"
+                    "managed-bookmarks"
+                  ];
                 };
               };
             };
@@ -300,85 +291,88 @@ in {
             name = "default"; # name as listed in about:profiles
             isDefault = true; # can be omitted; true if profile ID is 0
             settings = { };
-            bookmarks = [{
-              name = "Bookmarks Toolbar";
-              toolbar = true;
-              bookmarks = [
-                {
-                  name = "Youtube";
-                  url = "https://www.youtube.com";
-                }
-                {
-                  name = "Youtube Music";
-                  url = "https://music.youtube.com/";
-                }
-                {
-                  name = "Netflix";
-                  url = "https://www.netflix.com";
-                }
-                {
-                  name = "Github";
-                  url = "https://github.com/";
-                }
-                {
-                  name = "Chat GPT";
-                  url = "https://chatgpt.com/";
-                }
-                {
-                  name = "Firebase";
-                  url = "https://console.firebase.google.com";
-                }
-
-                {
-                  name = "NixOS";
-                  bookmarks = [
-                    {
-                      name = "Search NixOS";
-                      url = "https://mynixos.com/";
-                    }
-                    {
-                      name = "NixOS Wiki";
-                      url = "https://wiki.nixos.org/wiki/NixOS_Wiki";
-                    }
-                    {
-                      name = "NixOS Packages";
-                      url = "https://search.nixos.org/packages";
-                    }
-                    {
-                      name = "NixOS Options";
-                      url = "https://search.nixos.org/options";
-                    }
-                    {
-                      name = "NixOS Configs";
-                      url =
-                        "https://wiki.nixos.org/wiki/Configuration_Collection";
-                    }
-                    {
-                      name = "Nix Docs";
-                      url = "https://noogle.dev/";
-                    }
-                    {
-                      name = "Learn Nix";
-                      url = "https://nix.dev/";
-                    }
-                  ];
-                }
-                {
-                  name = "Search Engines";
-                  bookmarks = [
-                    {
-                      name = "Startpage";
-                      url =
-                        "https://www.startpage.com/do/mypage.pl?prfe=c602752472dd4a3d8286a7ce441403da08e5c4656092384ed3091a946a5a4a4c99962d0935b509f2866ff1fdeaa3c33a007d4d26e89149869f2f7d0bdfdb1b51aa7ae7f5f17ff4a233ff313d";
-                    }
-                    {
-                      name = "SearX";
-                      url = "https://searx.aicampground.com";
-                    }
-                  ];
-                }
-              ];
-            }];
+            bookmarks = [
+              {
+                name = "Bookmarks Toolbar";
+                toolbar = true;
+                bookmarks = [
+                  {
+                    name = "Youtube";
+                    url = "https://www.youtube.com";
+                  }
+                  {
+                    name = "Youtube Music";
+                    url = "https://music.youtube.com/";
+                  }
+                  {
+                    name = "Netflix";
+                    url = "https://www.netflix.com";
+                  }
+                  {
+                    name = "Github";
+                    url = "https://github.com/";
+                  }
+                  {
+                    name = "Chat GPT";
+                    url = "https://chatgpt.com/";
+                  }
+                  {
+                    name = "Firebase";
+                    url = "https://console.firebase.google.com";
+                  }
+                  {
+                    name = "Balena Cloud";
+                    url = "https://dashboard.balena-cloud.com";
+                  }
+                  {
+                    name = "NixOS";
+                    bookmarks = [
+                      {
+                        name = "Search NixOS";
+                        url = "https://mynixos.com/";
+                      }
+                      {
+                        name = "NixOS Wiki";
+                        url = "https://wiki.nixos.org/wiki/NixOS_Wiki";
+                      }
+                      {
+                        name = "NixOS Packages";
+                        url = "https://search.nixos.org/packages";
+                      }
+                      {
+                        name = "NixOS Options";
+                        url = "https://search.nixos.org/options";
+                      }
+                      {
+                        name = "NixOS Configs";
+                        url = "https://wiki.nixos.org/wiki/Configuration_Collection";
+                      }
+                      {
+                        name = "Nix Docs";
+                        url = "https://noogle.dev/";
+                      }
+                      {
+                        name = "Learn Nix";
+                        url = "https://nix.dev/";
+                      }
+                    ];
+                  }
+                  {
+                    name = "Search Engines";
+                    bookmarks = [
+                      {
+                        name = "Startpage";
+                        url = "https://www.startpage.com/do/mypage.pl?prfe=c602752472dd4a3d8286a7ce441403da08e5c4656092384ed3091a946a5a4a4c99962d0935b509f2866ff1fdeaa3c33a007d4d26e89149869f2f7d0bdfdb1b51aa7ae7f5f17ff4a233ff313d";
+                      }
+                      {
+                        name = "SearX";
+                        url = "https://searx.aicampground.com";
+                      }
+                    ];
+                  }
+                ];
+              }
+            ];
             search = {
               force = true;
               default = "Google";
@@ -395,96 +389,107 @@ in {
               ];
               engines = {
                 "Google" = {
-                  urls = [{
-                    template = "https://www.google.com/search";
-                    params = [{
-                      name = "q";
-                      value = "{searchTerms}";
-                    }];
-                  }];
-                  icon =
-                    "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg"; # You can change the icon path or leave it as-is.
-                  definedAliases =
-                    [ "@g" ]; # Use the alias @g or any other preferred alias.
+                  urls = [
+                    {
+                      template = "https://www.google.com/search";
+                      params = [
+                        {
+                          name = "q";
+                          value = "{searchTerms}";
+                        }
+                      ];
+                    }
+                  ];
+                  icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg"; # You can change the icon path or leave it as-is.
+                  definedAliases = [ "@g" ]; # Use the alias @g or any other preferred alias.
                 };
                 "Startpage" = {
-                  urls = [{
-                    template =
-                      "https://www.startpage.com/sp/search?query={searchTerms}&prfe=c602752472dd4a3d8286a7ce441403da08e5c4656092384ed3091a946a5a4a4c99962d0935b509f2866ff1fdeaa3c33a007d4d26e89149869f2f7d0bdfdb1b51aa7ae7f5f17ff4a233ff313d";
-                  }];
-                  icon =
-                    "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+                  urls = [
+                    {
+                      template = "https://www.startpage.com/sp/search?query={searchTerms}&prfe=c602752472dd4a3d8286a7ce441403da08e5c4656092384ed3091a946a5a4a4c99962d0935b509f2866ff1fdeaa3c33a007d4d26e89149869f2f7d0bdfdb1b51aa7ae7f5f17ff4a233ff313d";
+                    }
+                  ];
+                  icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                   definedAliases = [ "@sp" ];
                 };
                 "Brave" = {
-                  urls = [{
-                    template = "https://search.brave.com/search";
-                    params = [{
-                      name = "q";
-                      value = "{searchTerms}";
-                    }];
-                  }];
+                  urls = [
+                    {
+                      template = "https://search.brave.com/search";
+                      params = [
+                        {
+                          name = "q";
+                          value = "{searchTerms}";
+                        }
+                      ];
+                    }
+                  ];
                   definedAliases = [ "@br" ];
                 };
                 "Searx" = {
-                  urls = [{
-                    template =
-                      "https://searx.aicampground.com/?q={searchTerms}";
-                  }];
+                  urls = [
+                    {
+                      template = "https://searx.aicampground.com/?q={searchTerms}";
+                    }
+                  ];
                   iconUpdateURL = "https://nixos.wiki/favicon.png";
                   updateInterval = 24 * 60 * 60 * 1000; # every day
                   definedAliases = [ "@sx" ];
                 };
                 "NixOS Packages" = {
-                  urls = [{
-                    template = "https://search.nixos.org/packages";
-                    params = [
-                      {
-                        name = "type";
-                        value = "packages";
-                      }
-                      {
-                        name = "query";
-                        value = "{searchTerms}";
-                      }
-                    ];
-                  }];
-                  icon =
-                    "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+                  urls = [
+                    {
+                      template = "https://search.nixos.org/packages";
+                      params = [
+                        {
+                          name = "type";
+                          value = "packages";
+                        }
+                        {
+                          name = "query";
+                          value = "{searchTerms}";
+                        }
+                      ];
+                    }
+                  ];
+                  icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                   definedAliases = [ "@np" ];
                 };
                 "NixOS Options" = {
-                  urls = [{
-                    template = "https://search.nixos.org/options";
-                    params = [
-                      {
-                        name = "type";
-                        value = "packages";
-                      }
-                      {
-                        name = "query";
-                        value = "{searchTerms}";
-                      }
-                    ];
-                  }];
-                  icon =
-                    "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+                  urls = [
+                    {
+                      template = "https://search.nixos.org/options";
+                      params = [
+                        {
+                          name = "type";
+                          value = "packages";
+                        }
+                        {
+                          name = "query";
+                          value = "{searchTerms}";
+                        }
+                      ];
+                    }
+                  ];
+                  icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
                   definedAliases = [ "@no" ];
                 };
                 "NixOS Wiki" = {
-                  urls = [{
-                    template =
-                      "https://nixos.wiki/index.php?search={searchTerms}";
-                  }];
+                  urls = [
+                    {
+                      template = "https://nixos.wiki/index.php?search={searchTerms}";
+                    }
+                  ];
                   iconUpdateURL = "https://nixos.wiki/favicon.png";
                   updateInterval = 24 * 60 * 60 * 1000; # every day
                   definedAliases = [ "@nw" ];
                 };
                 "Home Manager Options" = {
-                  urls = [{
-                    template =
-                      "https://home-manager-options.extranix.com/?query={searchTerms}";
-                  }];
+                  urls = [
+                    {
+                      template = "https://home-manager-options.extranix.com/?query={searchTerms}";
+                    }
+                  ];
                   # urls = [
                   #   {
                   #     template = "https://mipmip.github.io/home-manager-option-search";
@@ -496,8 +501,7 @@ in {
                   #     ];
                   #   }
                   # ];
-                  iconUpdateURL =
-                    "https://avatars.githubusercontent.com/u/33221035";
+                  iconUpdateURL = "https://avatars.githubusercontent.com/u/33221035";
                   updateInterval = 24 * 60 * 60 * 1000; # Update every day.
                   definedAliases = [ "@hm" ];
                 };
