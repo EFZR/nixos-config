@@ -16,5 +16,6 @@
 
   environment.systemPackages = with pkgs; [
     gnomeExtensions.rounded-window-corners-reborn
+    gnomeExtensions.clipboard-indicator
   ];
 }
