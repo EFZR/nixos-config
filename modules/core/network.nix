@@ -1,4 +1,5 @@
-{ lib, ... }: {
+{ lib, ... }:
+{
   networking = {
     hostName = "efzr";
     networkmanager.enable = true;

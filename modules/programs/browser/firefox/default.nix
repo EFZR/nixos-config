@@ -74,7 +74,7 @@ in
               "privacy.webrtc.legacyGlobalIndicator" = false;
 
               # Use cloudflare for better security/privacy
-              "network.trr.mode" = 3; # 2 if your havng DNS problems
+              "network.trr.mode" = 2; # 2 if your havng DNS problems
               "network.trr.custom_uri" = "https://cloudflare-dns.com/dns-query";
               "network.trr.uri" = "https://cloudflare-dns.com/dns-query";
 

@@ -1,17 +1,25 @@
-{ pkgs, ... }: {
-  system = { stateVersion = "24.11"; };
+{ pkgs, ... }:
+{
+  system = {
+    stateVersion = "24.11";
+  };
 
   programs.nh = {
     enable = true;
     clean.enable = false;
   };
 
-  nixpkgs.config = { allowUnfree = true; };
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
 
   nix = {
     settings = {
       trusted-users = [ "efzr" ];
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       warn-dirty = false;
     };
 
@@ -66,6 +74,12 @@
 
       # Extras
       cmatrix
+
+      # Libre office
+      # libreoffice-qt
+      # hunspell
+      # hunspellDicts.en_US
+      # hunspellDicts.es_HN
     ];
   };
 
