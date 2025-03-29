@@ -325,6 +325,10 @@ in
                     url = "https://dashboard.balena-cloud.com";
                   }
                   {
+                    name = "Udemy";
+                    url = "https://www.udemy.com/";
+                  }
+                  {
                     name = "NixOS";
                     bookmarks = [
                       {

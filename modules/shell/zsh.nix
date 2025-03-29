@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   config = {
     programs.zsh.enable = true;
 
@@ -9,7 +10,9 @@
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
 
-        history = { expireDuplicatesFirst = true; };
+        history = {
+          expireDuplicatesFirst = true;
+        };
 
         oh-my-zsh = {
           enable = true;
@@ -24,7 +27,9 @@
           ];
         };
 
-        sessionVariables = { DEFAULT_USER = "efzr"; };
+        sessionVariables = {
+          DEFAULT_USER = "efzr";
+        };
 
         shellAliases = {
           home = "cd ~/";
