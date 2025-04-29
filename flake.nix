@@ -17,8 +17,17 @@
     nixvim.url = "github:efzr/nixvim";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixvim, nix-colors, catppuccin, ...
-    }@inputs: {
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      nix-colors,
+      catppuccin,
+      ...
+    }@inputs:
+    {
 
       nixosConfigurations.efzr = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };

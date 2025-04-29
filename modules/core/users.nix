@@ -9,7 +9,8 @@
           extraGroups = [
             "systemd-journal"
             "networkmanager"
-            "wheel"
+
+            # "wheel" # Just when using sudo
           ];
         };
       };

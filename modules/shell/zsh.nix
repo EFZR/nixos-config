@@ -40,7 +40,7 @@
           ll = "eza --icons --group-directories-first -lah";
           grep = "rg";
           parrot = "curl parrot.live";
-          update = "sudo nixos-rebuild switch";
+          update = "nixos-rebuild switch";
           lg = "lazygit";
 
           # Directory traversal
@@ -51,10 +51,10 @@
           "......" = "cd ../../../../..";
 
           ## Neovim aliases
-          nvim = "sudo nvim";
-          vim = "sudo nvim";
-          vi = "sudo nvim";
-          v = "sudo nvim";
+          nvim = "nvim";
+          vim = "nvim";
+          vi = "nvim";
+          v = "nvim";
 
           ## Git aliases
           "git log" = "git log --graph --all --decorate";
@@ -82,7 +82,7 @@
           di = "docker images";
           ds = "docker stop";
           drm = "docker rm";
-					docker = "sudo docker";
+          docker = "docker";
         };
       };
     };

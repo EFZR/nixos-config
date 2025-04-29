@@ -1,1 +1,8 @@
-{ imports = [ ./cli ./git ./games ./browser ]; }
+{
+  imports = [
+    ./cli
+    ./git
+    ./games
+    ./browser
+  ];
+}
