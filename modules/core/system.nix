@@ -62,6 +62,7 @@
 
       # Developer tools
       wget
+      gnumake
       git
       tmux
       zig
@@ -74,6 +75,7 @@
 
       # Extras
       cmatrix
+      obs-studio
 
       # Libre office
       # libreoffice-qt

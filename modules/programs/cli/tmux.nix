@@ -1,9 +1,11 @@
-{ ... }: {
+{ ... }:
+{
   config = {
     programs.tmux = {
       enable = true;
       baseIndex = 1;
       clock24 = true;
+      keyMode = "vi";
       historyLimit = 100000;
       extraConfig = ''
         # remap prefix from 'C-b' to 'C-a'

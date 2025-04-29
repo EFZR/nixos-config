@@ -6,6 +6,6 @@
     ./system.nix
     ./network.nix
     ./home.nix
-    ./nix_ld.nix # Activate if needed
+    # ./nix_ld.nix # Activate if needed
   ];
 }

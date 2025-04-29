@@ -82,6 +82,7 @@
           di = "docker images";
           ds = "docker stop";
           drm = "docker rm";
+					docker = "sudo docker";
         };
       };
     };
