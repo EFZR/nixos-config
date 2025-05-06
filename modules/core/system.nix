@@ -76,6 +76,7 @@
       # Extras
       cmatrix
       obs-studio
+			discord
 
       # Libre office
       # libreoffice-qt
@@ -87,11 +88,12 @@
 
   security = {
     sudo = {
-      enable = false;
+      enable = true;
+			wheelNeedsPassword = false;
     };
 
     doas = {
-      enable = true;
+      enable = false;
       extraRules = [
         {
           users = [ "efzr" ];
