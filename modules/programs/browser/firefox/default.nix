@@ -305,10 +305,6 @@ in
                     url = "https://music.youtube.com/";
                   }
                   {
-                    name = "Netflix";
-                    url = "https://www.netflix.com";
-                  }
-                  {
                     name = "Github";
                     url = "https://github.com/";
                   }

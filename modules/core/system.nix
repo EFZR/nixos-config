@@ -76,7 +76,8 @@
       # Extras
       cmatrix
       obs-studio
-			discord
+      discord
+      gimp
 
       # Libre office
       # libreoffice-qt
@@ -89,7 +90,7 @@
   security = {
     sudo = {
       enable = true;
-			wheelNeedsPassword = false;
+      wheelNeedsPassword = false;
     };
 
     doas = {
