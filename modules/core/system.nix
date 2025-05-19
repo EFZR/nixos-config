@@ -77,13 +77,17 @@
       cmatrix
       obs-studio
       discord
-      gimp
 
       # Libre office
       # libreoffice-qt
       # hunspell
       # hunspellDicts.en_US
       # hunspellDicts.es_HN
+
+      # art
+      gimp
+      vscode
+      # krita
     ];
   };
 

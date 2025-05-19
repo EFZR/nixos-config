@@ -29,7 +29,6 @@
 
             };
           };
-
           catppuccin = {
             flavor = "macchiato";
             accent = "peach";

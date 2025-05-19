@@ -28,7 +28,6 @@
       ...
     }@inputs:
     {
-
       nixosConfigurations.efzr = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
