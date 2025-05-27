@@ -86,7 +86,7 @@
 
       # art
       gimp
-      vscode
+      # vscode
       # krita
     ];
   };

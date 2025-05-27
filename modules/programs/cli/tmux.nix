@@ -26,6 +26,12 @@
 
         # Enable mouse control (clickable windows, panes, resizable panes)
         set -g mouse on 
+
+        # Resize Panes in a more efficient way
+        bind -r C-j resize-pane -D 25
+        bind -r C-k resize-pane -U 25
+        bind -r C-h resize-pane -L 25
+        bind -r C-l resize-pane -R 25
       '';
     };
   };
