@@ -56,6 +56,7 @@
       # Productivity
       lazygit
       gh
+			obsidian
 
       # Monitoring tools
       btop
@@ -72,6 +73,7 @@
       gcc
       docker
       ghostty
+      # vscode
 
       # Extras
       cmatrix
@@ -85,8 +87,7 @@
       # hunspellDicts.es_HN
 
       # art
-      gimp
-      # vscode
+      # gimp
       # krita
     ];
   };
