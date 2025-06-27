@@ -56,7 +56,7 @@
       # Productivity
       lazygit
       gh
-			obsidian
+      obsidian
 
       # Monitoring tools
       btop
