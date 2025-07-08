@@ -15,7 +15,11 @@
       efzr =
         { ... }:
         {
-          imports = [ inputs.catppuccin.homeManagerModules.catppuccin ];
+          imports = [
+            ./ghostty.nix
+            inputs.catppuccin.homeManagerModules.catppuccin
+          ];
+
           home = {
             stateVersion = "24.11";
             packages = [ inputs.nixvim.packages.x86_64-linux.default ];
@@ -25,8 +29,8 @@
             sessionVariables = {
               EDITOR = "nvim";
               BROWSER = "firefox";
+              TERM = "ghostty";
               NIXPKGS_ALLOW_INSECURE = 1;
-
             };
           };
           catppuccin = {

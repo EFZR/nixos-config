@@ -72,7 +72,7 @@
       direnv
       gcc
       docker
-      ghostty
+      # ghostty
       # vscode
 
       # Extras
