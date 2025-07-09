@@ -4,7 +4,20 @@
     xserver = {
       enable = true;
       displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
+      desktopManager.gnome = {
+        enable = true;
+        extraGSettingsOverrides = ''
+          [org/gnome/settings-daemon/plugins/media-keys]
+          control-center=['<Super>x']
+          custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+          home=['<Super>e']
+
+          [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+          binding='<Super>g'
+          command='ghostty'
+          name='Open Terminal'
+        '';
+      };
       # libinput = { touchpad.tapping = true; };
     };
 
