@@ -72,8 +72,8 @@
       direnv
       gcc
       docker
-      # ghostty
       # vscode
+			qemu
 
       # Extras
       cmatrix
@@ -86,7 +86,7 @@
       # hunspellDicts.en_US
       # hunspellDicts.es_HN
 
-      # art
+      # Edition tools
       # gimp
       # krita
     ];

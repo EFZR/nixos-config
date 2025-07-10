@@ -19,10 +19,10 @@
         "ctrl+'=new_split:down"
         "ctrl+shift+'=new_split:right"
 
-        "ctrl+h=goto_split:left"
-        "ctrl+j=goto_split:bottom"
-        "ctrl+k=goto_split:top"
-        "ctrl+l=goto_split:right"
+        "ctrl+shift+h=goto_split:left"
+        "ctrl+shift+j=goto_split:bottom"
+        "ctrl+shift+k=goto_split:top"
+        "ctrl+shift+l=goto_split:right"
 
         "ctrl+shift+up=scroll_to_top"
         "ctrl+shift+down=scroll_to_bottom"
