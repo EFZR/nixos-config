@@ -15,10 +15,7 @@
       efzr =
         { ... }:
         {
-          imports = [
-            ./ghostty.nix
-            inputs.catppuccin.homeManagerModules.catppuccin
-          ];
+          imports = [ inputs.catppuccin.homeManagerModules.catppuccin ];
 
           home = {
             stateVersion = "24.11";

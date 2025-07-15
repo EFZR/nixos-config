@@ -73,7 +73,9 @@
       gcc
       docker
       # vscode
-			qemu
+
+      # Qemu
+      qemu
 
       # Extras
       cmatrix

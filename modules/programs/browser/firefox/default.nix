@@ -14,6 +14,7 @@ in
     programs = {
       firefox = {
         enable = true;
+        languagePacks = [ "en-US" ];
         package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
           extraPolicies = {
             DisableTelemetry = true;

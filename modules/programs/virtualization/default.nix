@@ -1,0 +1,3 @@
+{
+  imports = [ ./virt-manager.nix ];
+}
