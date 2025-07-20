@@ -326,6 +326,10 @@ in
                     url = "https://www.udemy.com/";
                   }
                   {
+                    name = "MonkeyType";
+                    url = "https://monkeytype.com/";
+                  }
+                  {
                     name = "NixOS";
                     bookmarks = [
                       {

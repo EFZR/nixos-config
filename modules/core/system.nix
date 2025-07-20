@@ -11,6 +11,7 @@
 
   nixpkgs.config = {
     allowUnfree = true;
+    # allowUnsupportedSystem = true;
   };
 
   nix = {
@@ -72,6 +73,7 @@
       direnv
       gcc
       docker
+      beekeeper-studio
       # vscode
 
       # Qemu

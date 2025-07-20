@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   config = {
     programs.zsh.enable = true;
@@ -26,6 +26,14 @@
             "docker"
           ];
         };
+
+        plugins = [
+          {
+            name = "vi-mode";
+            src = pkgs.zsh-vi-mode;
+            file = "share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+          }
+        ];
 
         sessionVariables = {
           DEFAULT_USER = "efzr";
