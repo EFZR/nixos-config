@@ -32,6 +32,8 @@
 
           unfocused-split-opacity = 0.9;
           background-blur-radius = 20;
+          mouse-hide-while-typing = true;
+
           # background-opacity = 0.6; # Personally I don't like this feature, but disable if needed
         };
       };
