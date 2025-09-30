@@ -4,6 +4,6 @@
     ./git
     ./games
     ./browser
-    ./virtualization
+    # ./virtualization
   ];
 }

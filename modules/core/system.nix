@@ -43,6 +43,7 @@
       p7zip
 
       # Utilities
+      pciutils
       ripgrep
       jq
       yq-go
@@ -74,7 +75,7 @@
       gcc
       docker
       beekeeper-studio
-      # vscode
+      vscode
 
       # Qemu
       qemu
@@ -82,7 +83,13 @@
       # Extras
       cmatrix
       obs-studio
-      discord
+      # discord
+      # anydesk
+      google-chrome
+
+      # Games
+      pcsx2
+      melonDS
 
       # Libre office
       # libreoffice-qt
