@@ -18,8 +18,8 @@
           # theme="catppuccin-latte";
 
           keybind = [
-            "ctrl+'=new_split:down"
-            "ctrl+shift+'=new_split:right"
+            "ctrl+'=new_split:right"
+            "ctrl+shift+'=new_split:down"
 
             "ctrl+shift+h=goto_split:left"
             "ctrl+shift+j=goto_split:bottom"

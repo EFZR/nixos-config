@@ -27,12 +27,44 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    gnomeExtensions.rounded-window-corners-reborn
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.appindicator
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      gnomeExtensions.rounded-window-corners-reborn
+      gnomeExtensions.clipboard-indicator
+      gnomeExtensions.blur-my-shell
+      gnomeExtensions.appindicator
+    ];
+
+    gnome.excludePackages = with pkgs; [
+      cheese # photo booth
+      epiphany # web browser
+      gedit # text editor
+      simple-scan # document scanner
+      yelp # help viewer
+      file-roller # archive manager
+      geary # email client
+      gnome-maps
+      gnome-music
+      gnome-screenshot
+      gnome-system-monitor
+      gnome-weather
+
+      # baobab # disk usage analyzer
+      # eog # image viewer
+      # totem # video player
+      # evince # document viewer
+      # seahorse # password manager
+      # gnome-calculator
+      # gnome-calendar
+      # gnome-characters
+      # gnome-clocks
+      # gnome-contacts
+      # gnome-font-viewer
+      # gnome-logs
+      # gnome-disk-utility
+      # pkgs.gnome-connections
+    ];
+  };
 
   environment.sessionVariables.GST_PLUGIN_SYSTEM_PATH_1_0 =
     lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0"

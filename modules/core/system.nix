@@ -56,8 +56,8 @@
       ipcalc
 
       # Productivity
-      lazygit
       gh
+      lazygit
       obsidian
 
       # Monitoring tools
@@ -90,6 +90,7 @@
       # Games
       pcsx2
       melonDS
+			# steam
 
       # Libre office
       # libreoffice-qt
@@ -98,7 +99,11 @@
       # hunspellDicts.es_HN
 
       # Edition tools
-      # gimp
+			ffmpeg
+      kdePackages.kdenlive
+			audacity
+      gimp
+      # davinci-resolve
       # krita
     ];
   };
