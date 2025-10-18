@@ -33,6 +33,7 @@
       gnomeExtensions.clipboard-indicator
       gnomeExtensions.blur-my-shell
       gnomeExtensions.appindicator
+      gnomeExtensions.advanced-alttab-window-switcher
     ];
 
     gnome.excludePackages = with pkgs; [

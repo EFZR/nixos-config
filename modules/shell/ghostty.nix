@@ -8,7 +8,7 @@
         installVimSyntax = true;
 
         settings = {
-          font-size = 10;
+          font-size = 9;
           theme = "GruvboxDark";
           gtk-titlebar = false;
 
